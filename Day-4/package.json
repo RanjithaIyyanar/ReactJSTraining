@@ -1,0 +1,32 @@
+{
+  "name": "day-3",
+  "version": "1.0.0",
+  "description": "Day 3 Demo",
+  "main": "Main.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RanjithaIyyanar/ReactJSTraining.git"
+  },
+  "keywords": [
+    "ReactTraining"
+  ],
+  "author": "Ranjitha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RanjithaIyyanar/ReactJSTraining/issues"
+  },
+  "homepage": "https://github.com/RanjithaIyyanar/ReactJSTraining#readme",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
