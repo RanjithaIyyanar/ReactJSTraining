@@ -1,0 +1,27 @@
+.MySlides{
+    position: relative;
+}
+.MySlides img{
+    width: 100%;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.MainContent{
+    position: absolute;
+    top: 140px;
+    left: 122px;
+    
+}
+.BoldCon{
+    font-size: xxx-large;
+    font-style: oblique;
+}
+.Btn button{
+    width: 94px;
+    height: 39px;
+    background-color: #30475e;
+    color: white;
+    margin-top: 56px;
+    margin-left: -300px;
+    border: none;
+}

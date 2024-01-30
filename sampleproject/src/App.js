@@ -1,10 +1,13 @@
-import NavBar from "./navbar/navbar";
-import Footer from "./footer/footer";
-
+import NavBar from "./Components/navbar/navbar";
+import Footer from "./Components/footer/footer";
+import MainPage from "./Components/mainpage/mainpage";
 function App() {
   return (
     <div>
-        <NavBar/><Footer/>
+        <NavBar/>
+        <MainPage/>
+        <
+        <Footer/>
     </div>
   );
 }
