@@ -17,6 +17,7 @@ export default function MainPage() {
                 </div>
                 <div className='Btn'>
                     <button>Read More</button>
+                    <nav> </nav>
                 </div>
             </div>
         </div>

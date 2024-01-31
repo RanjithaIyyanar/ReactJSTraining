@@ -1,0 +1,81 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+const Header = () =>{
+  return(
+    <div className="Container1">
+      <img></img>
+    </div>
+  )
+}
+const RestaurantCard = () =>{
+  return(
+    <div className="">
+      <img src=""></img>
+      <p>Burger King</p>
+      <p>4.3</p>
+      <p>Burgers, Americans</p>
+    </div>
+    
+  )
+}
+const Body = () =>{
+  return(
+    <div className="Body">
+      <div className="search">Search:</div>
+      <div className="res-Container"></div>
+      <RestaurantCard/>
+      <RestaurantCard/><RestaurantCard/>
+    </div>
+    
+  )
+}
+const AppLayout = () =>{
+  return(
+    <div className="Container">
+      <Header/>
+      <Body/>
+    </div>
+  )
+}
+const jsxHeading = (
+  <h1 className="head" id="heading">
+    React using jsx
+  </h1>
+);
+
+const HeadingComponentFunc = function () {
+  return (
+    <h1 className="head" id="heading">
+      React using jsx
+    </h1>
+  );
+};
+
+// React Functional Component
+const HeadingComponent = () => {
+  return (
+    <h1 className="head" id="heading">
+      Welcome React
+    </h1>
+  );
+};
+
+const Title = () => <h1>Testing</h1>;
+
+const title2 = <h1>Im ReactJS</h1>;
+
+const HeadingComponent2 = () => (
+  <div>
+    {2 + 6}
+    {title2}
+    <Title />
+    <h1 className="head" id="heading">
+      React using jsx
+    </h1>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent2 />); 

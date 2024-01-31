@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 40fr 60fr ;
     
-    position: fixed;
+    /* position: fixed; */
     /* grid-template-rows: 40% 50%; */
   }
   .Logo i{
