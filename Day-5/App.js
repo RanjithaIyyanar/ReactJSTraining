@@ -1,81 +1,55 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
+const Header = () => {
+   return (
+       <div className="header">
+               <img
+           src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png"
+           alt="logo" width={100} height={100} />          
 
-const Header = () =>{
-  return(
-    <div className="Container1">
-      <img></img>
-    </div>
-  )
+           <ul className="nav-Items">
+               <li>About Us</li>
+               <li>Contact</li>
+           </ul>
+       </div>
+      
+   )
 }
+
 const RestaurantCard = () =>{
-  return(
-    <div className="">
-      <img src=""></img>
-      <p>Burger King</p>
-      <p>4.3</p>
-      <p>Burgers, Americans</p>
-    </div>
-    
-  )
+   return (
+       <div>
+           <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ygwskis4ogmqgafbusb1"
+           alt="" />
+           <p>Shree Mithai</p>
+           <p>4.6</p>
+           <p>Desserts</p>
+       </div>
+   )
 }
+
 const Body = () =>{
-  return(
-    <div className="Body">
-      <div className="search">Search:</div>
-      <div className="res-Container"></div>
-      <RestaurantCard/>
-      <RestaurantCard/><RestaurantCard/>
-    </div>
-    
-  )
+   return (
+   <div className="body">
+       <div className="search">Search :</div>
+       <div className="res-container">
+           <RestaurantCard/>
+       </div>
+   </div>
+   );
 }
-const AppLayout = () =>{
-  return(
-    <div className="Container">
-      <Header/>
-      <Body/>
-    </div>
-  )
+
+const AppLayout = () => {
+   return (
+   <div className = "container">
+       <Header/>
+       <Body/>
+   </div>
+   );
 }
-const jsxHeading = (
-  <h1 className="head" id="heading">
-    React using jsx
-  </h1>
-);
-
-const HeadingComponentFunc = function () {
-  return (
-    <h1 className="head" id="heading">
-      React using jsx
-    </h1>
-  );
-};
-
-// React Functional Component
-const HeadingComponent = () => {
-  return (
-    <h1 className="head" id="heading">
-      Welcome React
-    </h1>
-  );
-};
-
-const Title = () => <h1>Testing</h1>;
-
-const title2 = <h1>Im ReactJS</h1>;
-
-const HeadingComponent2 = () => (
-  <div>
-    {2 + 6}
-    {title2}
-    <Title />
-    <h1 className="head" id="heading">
-      React using jsx
-    </h1>
-  </div>
-);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent2 />); 
+
+root.render(<AppLayout/>);
+
