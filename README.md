@@ -4,3 +4,7 @@ The Techie Blog
 Day 5 Task
 <img width="960" alt="image" src="https://github.com/RanjithaIyyanar/ReactJSTraining/assets/87688314/aa80aa5c-2953-48bb-b77c-b4c6bc8fcc12">
 
+Day 6 Task
+![Uploading image.png…]()
+
+
