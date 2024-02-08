@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { CDN_URL } from "./utils/constant";
+import { useState } from "react";
+import { resList } from "./utils/mockData";
+
+
 
 const Header = () => {
   return (
     <div className="header">
-      <Title />
       <div className="nav-items">
         <ul>
           <li>Home</li>
@@ -116,12 +120,13 @@ const App = () => {
     <div className="app">
       <Header />
       <Body />
+      <Footer/>
     </div>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<AppLayout />);
+root.render(<App/>);
 
-export default App;
+// export default App;
