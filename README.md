@@ -7,4 +7,8 @@ Day 5 Task
 Day 6 Task
 ![Uploading image.png…]()
 
+Day 8 Task
+![Uploading image.png…]()
+
+
 
