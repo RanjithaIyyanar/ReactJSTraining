@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { CDN_URL } from "./utils/constants";
-import { resList } from "./utils/mockData";
+import { SWIGGY_URL } from "./utils/constants";
 
 // const Header = () => {
 //    return (
@@ -109,7 +109,6 @@ const Body = () => {
     const data = await fetch(SWIGGY_URL);
     const dataJSON = await data.json();
     console.log("dataJSON", dataJSON);
-    // we have to render our page with the new data
     setListOfRestaurants(
       dataJSON?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
