@@ -9,9 +9,11 @@ import { SWIGGY_URL } from "./utils/constants";
 import Error from "./components/erroe";
 import Contact from "./components/contact";
 import About from "./components/about";
-
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCartPlus } from "@fortawesome/fontawesome-free-solid";
 
 import { Link } from "react-router-dom";
+import { LOGO_SWIGGY } from "./utils/constants";
 
 
 // const Header = () => {
@@ -69,7 +71,7 @@ import { Link } from "react-router-dom";
 
 const Title = () => (
   <a href="/">
-    <img className="logo" src={LOGO_URL} alt="Food Fire Logo" />
+    <img className="logo" src={LOGO_SWIGGY} alt="Food Fire Logo" />
   </a>
 );
 
@@ -77,6 +79,9 @@ const Header = () => {
   return (
     <div className="header">
       <Title />
+      <div className="location">
+            <p>Setup your precise location</p><i></i>
+      </div>
       <div className="nav-items">
         <ul>
           <li>
@@ -89,7 +94,7 @@ const Header = () => {
             <Link to="/Contact">Contact Us</Link>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCartPlus} />
+            {/* <FontAwesomeIcon icon={faCartPlus} /> */}
           </li>
         </ul>
       </div>
@@ -285,12 +290,12 @@ const AppLayout = () => {
     <div className="app">
       <Header />
       <Outlet />
-      {/* outlet is filled with respect to the path */}
+      <Footer />
     </div>
   );
 };
 
-// creating the configs for routing: what will happen on a particular path/url
+
 const appRouter = createBrowserRouter([
   {
     path: "/", //root route
